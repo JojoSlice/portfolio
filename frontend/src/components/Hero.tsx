@@ -24,10 +24,10 @@ export default function Hero() {
 
     return (
         <section ref={sectionRef} className="h-[200vh]">
-            <div className="sticky top-0 h-screen overflow-hidden">
+            <div className="sticky top-0 h-screen overflow-hidden bg-gradient-to-br from-taupe-200 to-slate-600">
                 <div ref={trackRef} className="flex h-full">
                     <div className="min-w-screen h-full">
-                        <h1>Hallo</h1>
+                        <h1 className="headline">Hallo</h1>
                     </div>
                     <div className="min-w-screen h-full">
                         <h1>Hallo 2</h1>
