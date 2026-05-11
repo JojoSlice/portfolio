@@ -1,9 +1,25 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import Lenis from 'lenis'
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
 import './index.css'
+import Hero from './components/Hero'
+
+gsap.registerPlugin(ScrollTrigger)
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
-        <h1> "Hallo" </h1>
+        <Hero />
     </StrictMode>,
 )
+
+const lenis = new Lenis()
+
+lenis.on('scroll', ScrollTrigger.update)
+
+gsap.ticker.add((time) => {
+    lenis.raf(time * 1000)
+})
+
+gsap.ticker.lagSmoothing(0)
