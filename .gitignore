@@ -1,0 +1,92 @@
+# =========================
+# Node / Vite / React
+# =========================
+node_modules/
+dist/
+.vite/
+coverage/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln.docstates
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# =========================
+# TypeScript
+# =========================
+*.tsbuildinfo
+
+# =========================
+# .NET / ASP.NET Core
+# =========================
+bin/
+obj/
+
+# User-specific files
+*.user
+*.rsuser
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+
+# Visual Studio
+.vs/
+
+# Publish output
+publish/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Entity Framework
+*.mdf
+*.ldf
+
+# NuGet
+*.nupkg
+.nuget/packages/
+
+# Logs
+*.log
+
+# IIS Express
+iisexpress/
+
+# ASP.NET Core
+appsettings.Development.json
+
+# Test results
+TestResults/
+
+# =========================
+# Docker
+# =========================
+docker-compose.override.yml
+
+# =========================
+# Optional
+# =========================
+*.swp
+*.tmp
