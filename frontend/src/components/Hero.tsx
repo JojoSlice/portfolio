@@ -26,11 +26,14 @@ export default function Hero() {
         <section ref={sectionRef} className="h-[200vh]">
             <div className="sticky top-0 h-screen overflow-hidden bg-gradient-to-br from-taupe-200 to-slate-600">
                 <div ref={trackRef} className="flex h-full">
-                    <div className="min-w-screen h-full">
-                        <h1 className="headline">Hallo</h1>
+                    <div className="min-w-[70vw] h-full">
+                        <h1 className="headline text-shadow-lg text-shadow-black">Welcome to<br />the Portfolio of<br />Johannes Lindell</h1>
                     </div>
-                    <div className="min-w-screen h-full">
+                    <div className="min-w-[60vw] h-full">
                         <h1>Hallo 2</h1>
+                    </div>
+                    <div className="min-w-[70vw] h-full">
+                        <h1>Hallo 3</h1>
                     </div>
                 </div>
             </div>
