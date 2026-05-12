@@ -19,20 +19,24 @@ export default function Hero() {
             })
 
             const shadow = { x: 40 }
+
+            const applyTextShadow = (x: number) => {
+                const value = [
+                    `${x * 0.3}px 6px 0px rgba(15,23,42,0.12)`,
+                    `${x * 0.6}px 14px 10px rgba(15,23,42,0.10)`,
+                    `${x}px 26px 24px rgba(15,23,42,0.08)`,
+                ].join(', ')
+                sectionRef.current?.querySelectorAll<HTMLElement>('.headlineBox').forEach(el => {
+                    el.style.textShadow = value
+                })
+            }
+
+            applyTextShadow(shadow.x)
+
             gsap.to(shadow, {
                 x: -20,
                 ease: 'none',
-                onUpdate: () => {
-                    const x = shadow.x
-                    const value = [
-                        `${x * 0.3}px 6px 0px rgba(15,23,42,0.12)`,
-                        `${x * 0.6}px 14px 10px rgba(15,23,42,0.10)`,
-                        `${x}px 26px 24px rgba(15,23,42,0.08)`,
-                    ].join(', ')
-                    sectionRef.current?.querySelectorAll<HTMLElement>('.headlineBox').forEach(el => {
-                        el.style.textShadow = value
-                    })
-                },
+                onUpdate: () => applyTextShadow(shadow.x),
                 scrollTrigger: {
                     trigger: sectionRef.current,
                     start: 'top top',
