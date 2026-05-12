@@ -69,7 +69,7 @@ export default function Hero() {
                             <h1 className="headlineBold text-slate-800 ml-26">Developer</h1>
                             <h1 className="headlineSemi text-slate-800 ml-6">I like to Develop</h1>
                             <h1 className="headlineSemiSmal text-slate-800">both myself</h1>
-                            <h1 className="headlineSemiSmal text-slate-800 ml-20">and softwear</h1>
+                            <h1 className="headlineSemiSmal text-slate-800 ml-20">and software</h1>
                             <h1 className="headlineSemi text-slate-800 ml-22">let me do</h1>
                             <h1 className="headlineBold text-slate-800 ml-5">Developing <span className="headlineSemi"> for </span> You</h1>
                         </div>

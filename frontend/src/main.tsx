@@ -4,13 +4,16 @@ import Lenis from 'lenis'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import './index.css'
-import Hero from './components/Hero'
+import { BrowserRouter } from 'react-router-dom'
+import App from './App'
 
 gsap.registerPlugin(ScrollTrigger)
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
-        <Hero />
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
     </StrictMode>,
 )
 
